@@ -1,0 +1,16 @@
+# vim/emacs temporary/backup files
+*~
+*.swp
+
+*.diff
+*.pyc
+*.bc
+*.o
+
+dota2/
+linux32/
+package/
+public/
+
+*.vvd
+steam*
