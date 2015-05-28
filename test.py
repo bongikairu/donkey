@@ -71,7 +71,8 @@ def app(environ, start_response):
 		print "- 404 NOT FOUND"
 		start_response("404 NOT FOUND", [
 			("Content-Type", "text/plain"),
-			("Content-Length", str(len(data)))
+			("Content-Length", str(len(data))),
+			("Access-Control-Allow-Origin", "http://104.236.208.106")
 		])
 		return iter([data])
 	
