@@ -11,6 +11,10 @@ dota2/
 linux32/
 package/
 public/
+appcache/
+config/
+depotcache/
+logs/
 
 *.vvd
 steam*

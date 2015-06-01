@@ -1,0 +1,1 @@
+./steamcmd.sh +login anonymous +force_install_dir ./dota2 +app_update 570 +quit
