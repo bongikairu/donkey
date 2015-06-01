@@ -71,8 +71,8 @@ def app(environ, start_response):
 		print "- 404 NOT FOUND"
 		start_response("404 NOT FOUND", [
 			("Content-Type", "text/plain"),
-			("Content-Length", str(len(data))),
-			("Access-Control-Allow-Origin", "http://104.236.208.106")
+			("Content-Length", str(len(data)))
+#			("Access-Control-Allow-Origin", "http://104.236.208.106")
 		])
 		return iter([data])
 	
@@ -149,9 +149,9 @@ def app(environ, start_response):
 	print "- 200 OK"
 	#data = "Hello, World!\n"
 	start_response("200 OK", [
-		("Content-Type", "application/octet-stream"),
+		("Content-Type", "application/octet-stream")
 		#("Content-Length", str(subsize)),
-		("Access-Control-Allow-Origin", "http://104.236.208.106")
+#		("Access-Control-Allow-Origin", "http://104.236.208.106")
 	])
 	return content()
 

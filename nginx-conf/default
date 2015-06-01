@@ -47,6 +47,10 @@ server {
 	}
 	
 	location /dota2 {
+	
+		# only if nginx's if is not this evil ...
+		# I could limit origin with ease
+		more_set_headers 'Access-Control-Allow-Origin: *';
 		try_files $uri @proxy_to_app;
 	}
 	
@@ -60,6 +64,7 @@ server {
 		expires 60m;
 		more_set_headers "Pragma: public";
 		more_set_headers "Cache-Control: public";
+		more_set_headers 'Access-Control-Allow-Origin: *';
 		
 		proxy_cache backcache;
 		#proxy_cache_bypass $http_cache_control;
