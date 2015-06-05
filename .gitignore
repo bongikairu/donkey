@@ -16,5 +16,7 @@ config/
 depotcache/
 logs/
 
+s2d2contents/
+
 *.vvd
 steam*

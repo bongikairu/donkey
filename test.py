@@ -9,8 +9,9 @@ libhl = cdll.LoadLibrary("/root/donkey/HLLib/libhl.so.2.3.0");
 
 libhl.hlInitialize()
 
-filename = "/root/donkey/dota2/dota/pak01_dir.vpk"
-filemode = 1 + 8 + 32	# only read flag
+#filename = "/root/donkey/dota2/dota/pak01_dir.vpk"
+filename = "/root/donkey/s2d2contents/pak01_dir.vpk"
+filemode = 1 + 8 + 32	# read flag + volatile flag
 
 ePackageType = libhl.hlGetPackageTypeFromName(filename);
 
